@@ -1,0 +1,25 @@
+{
+  "extends": ["xo", "xo-typescript/space", "xo-react/space", "prettier"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {
+        "react/react-in-jsx-scope": "off",
+        "@typescript-eslint/naming-convention": "off",
+        "@typescript-eslint/no-empty-function": "warn",
+        "@typescript-eslint/triple-slash-reference": "off",
+        "prettier/prettier": [
+          "error",
+          {
+            "editorconfig": true,
+            "singleQuote": true,
+            "jsxSingleQuote": true
+          }
+        ]
+      }
+    }
+  ],
+  "plugins": ["prettier"],
+  "ignorePatterns": ["/*", "!src"],
+  "root": true
+}
